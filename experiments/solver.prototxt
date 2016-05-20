@@ -1,0 +1,14 @@
+train_net: "./experiments/train.prototxt"
+base_lr: 0.001
+lr_policy: "fixed"
+gamma: 0.1
+average_loss: 1
+# stepsize: 10000
+display: 20
+max_iter: 250000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 0
+snapshot_prefix: "image_sketch_net"
+solver_mode: GPU
+# debug_info: true

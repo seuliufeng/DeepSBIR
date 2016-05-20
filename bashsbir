@@ -1,0 +1,2 @@
+export PYTHONPATH=`pwd`/caffe_sbir/python:$PYTHONPATH
+export PYTHONPATH=`pwd`/lib:$PYTHONPATH

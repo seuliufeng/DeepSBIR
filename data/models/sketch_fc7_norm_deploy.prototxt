@@ -1,0 +1,271 @@
+name: "SketchNet"
+input: "data"
+input_shape {
+  dim: 10
+  dim: 1
+  dim: 225
+  dim: 225
+}
+layer {
+  name: "conv1_s1"
+  type: "Convolution"
+  bottom: "data"
+  top: "conv1_s1"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 64
+    kernel_size: 15
+    stride: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0.01
+    }
+  }
+}
+layer {
+  name: "relu1_s1"
+  type: "ReLU"
+  bottom: "conv1_s1"
+  top: "conv1_s1"
+}
+layer {
+  name: "pool1_s1"
+  type: "Pooling"
+  bottom: "conv1_s1"
+  top: "pool1_s1"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+layer {
+  name: "conv2_s1"
+  type: "Convolution"
+  bottom: "pool1_s1"
+  top: "conv2_s1"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 128
+    pad: 0
+    kernel_size: 5
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0.01
+    }
+  }
+}
+layer {
+  name: "relu2_s1"
+  type: "ReLU"
+  bottom: "conv2_s1"
+  top: "conv2_s1"
+}
+layer {
+  name: "pool2_s1"
+  type: "Pooling"
+  bottom: "conv2_s1"
+  top: "pool2_s1"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+layer {
+  name: "conv3_s1"
+  type: "Convolution"
+  bottom: "pool2_s1"
+  top: "conv3_s1"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 256
+    pad: 1
+    stride: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0.01
+    }
+  }
+}
+layer {
+  name: "relu3_s1"
+  type: "ReLU"
+  bottom: "conv3_s1"
+  top: "conv3_s1"
+}
+layer {
+  name: "conv4_s1"
+  type: "Convolution"
+  bottom: "conv3_s1"
+  top: "conv4_s1"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 256
+    pad: 1
+    stride: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0.01
+    }
+  }
+}
+layer {
+  name: "relu4_s1"
+  type: "ReLU"
+  bottom: "conv4_s1"
+  top: "conv4_s1"
+}
+layer {
+  name: "conv5_s1"
+  type: "Convolution"
+  bottom: "conv4_s1"
+  top: "conv5_s1"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 256
+    pad: 1
+    stride: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0.01
+    }
+  }
+}
+layer {
+  name: "relu5_s1"
+  type: "ReLU"
+  bottom: "conv5_s1"
+  top: "conv5_s1"
+}
+layer {
+  name: "pool5_s1"
+  type: "Pooling"
+  bottom: "conv5_s1"
+  top: "pool5_s1"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+layer {
+  name: "fc6_s1"
+  type: "InnerProduct"
+  bottom: "pool5_s1"
+  top: "fc6_s1"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  inner_product_param {
+    num_output: 512
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0.01
+    }
+  }
+}
+layer {
+  name: "relu6_s1"
+  type: "ReLU"
+  bottom: "fc6_s1"
+  top: "fc6_s1"
+}
+layer {
+  name: "fc7_sketch"
+  type: "InnerProduct"
+  bottom: "fc6_s1"
+  top: "fc7_sketch"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  inner_product_param {
+    num_output: 256
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0.01
+    }
+  }
+}
+layer {
+  name: "norm7_sketch"
+  type: "Normalize"
+  bottom: "fc7_sketch"
+  top: "norm7_sketch"
+}
