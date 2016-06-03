@@ -65,7 +65,17 @@ Re-training the model
 	
 Extra comment
 
-This project used codes of the following project:
+1. All provided models and codes are optimised version. And our latest result is shown below:
+   
+   Shoes dataset: 
+		
+	acc.@1: 53.91%	acc.@10: 91.3%	%corr.: 72.29%
+
+   Chairs dataset: 
+		
+	acc.@1: 72.16%	acc.@10: 98.97%	%corr.: 74.36%
+
+2. This project used codes of the following project:
 
 Caffe trainnet python wrapper and python data layer:
 https://github.com/rbgirshick/fast-rcnn
