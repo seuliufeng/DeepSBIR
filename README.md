@@ -77,12 +77,12 @@ Extra comment
 
 2. This project used codes of the following project:
 
-Caffe trainnet python wrapper and python data layer:
-https://github.com/rbgirshick/fast-rcnn
-
-L2 normalization layer:
-https://github.com/happynear/caffe-windows
-
-Triplet loss:
-http://blog.csdn.net/tangwei2014/article/details/46812153
+   Caffe trainnet python wrapper and python data layer:
+   https://github.com/rbgirshick/fast-rcnn
+	
+   L2 normalization layer:
+   https://github.com/happynear/caffe-windows
+	
+   Triplet loss:
+   http://blog.csdn.net/tangwei2014/article/details/46812153
 
