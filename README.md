@@ -17,26 +17,28 @@ And if you use the code for your research, please cite our paper:
 	
 Contents
 
-1. Requirements: software
+1. License
 
-2. License
+2. Installation
 
-3. Installation
+3. Run the demo
 
-4. Run the demo
+4. Re-training the model
 
-5. Re-training the model
+5. Extra comment
 
-6. Extra comment
+License
+
+MIT
 
 Installation
 
 1. Download and unzip repository
 
 2. Build Caffe and pycaffe
-
 		a. Go to root folder of this project
-		b. make –j32 && make pycaffe
+		b. modify the path in Makefile.config
+		c. make –j32 && make pycaffe
 
 3. Configure environment variable. Modify the path in bashsbir to your own path, and run
 
