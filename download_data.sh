@@ -5,7 +5,7 @@ wget "http://www.eecs.qmul.ac.uk/~qian/Qian's%20Materials/sbir_cvpr2016.tar"
 tar -xvf sbir_cvpr2016.tar
 rsync -a sbir_cvpr2016_release/ data/
 rm -r sbir_cvpr2016_release
-rm sbir_cvpr2016.zip
+rm sbir_cvpr2016.tar
 
 # download model
 wget "http://www.eecs.qmul.ac.uk/~qian/Qian's%20Materials/sbir_models.zip"
