@@ -68,7 +68,6 @@ And if you use the code for your research, please cite our paper:
 
 **Note:** You can also download them manually from our project page: http://www.eecs.qmul.ac.uk/~qian/Project_cvpr16.html
 
-
 2. Run the demo:
 
 ```shell
