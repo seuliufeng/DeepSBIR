@@ -34,20 +34,20 @@ And if you use the code for your research, please cite our paper:
 1. Download and unzip repository
 
 2. Build Caffe and pycaffe
-a. Go to root folder of this project
+	a. Go to root folder of this project
 
-b. modify the path in Makefile.config, to use this code, you have to compile with python layer
-```make
-  WITH_PYTHON_LAYER := 1
-```
+	b. modify the path in Makefile.config, to use this code, you have to compile with python layer
+	```make
+	  WITH_PYTHON_LAYER := 1
+	```
 
-c. Compile caffe 
-```shell make –j32 && make pycaffe```
+	c. Compile caffe 
+	```shell make –j32 && make pycaffe```
 
 3. Configure environment variable. Modify the path in bashsbir to your own path, and run
-```shell
-source bashsbir
-```
+	```shell
+	source bashsbir
+	```
 
 ###Run the demo
 
@@ -78,6 +78,8 @@ python $SBIR_ROOT/tools/sbir_demo.py
 
 2. This project used codes of the following project:
    Caffe trainnet python wrapper and python data layer(https://github.com/rbgirshick/fast-rcnn)
+
    L2 normalization layer(https://github.com/happynear/caffe-windows)
+   
    Triplet loss(http://blog.csdn.net/tangwei2014/article/details/46812153)
 
