@@ -17,15 +17,15 @@ And if you use the code for your research, please cite our paper:
 	
 ####Contents
 
--1. License
+1. License
 
--2. Installation
+2. Installation
 
--3. Run the demo
+3. Run the demo
 
--4. Re-training the model
+4. Re-training the model
 
--5. Extra comment
+5. Extra comment
 
 ###License
 **MIT License**
@@ -34,6 +34,7 @@ And if you use the code for your research, please cite our paper:
 1. Download and unzip repository
 
 2. Build Caffe and pycaffe
+
 	a. Go to root folder of this project
 
 	b. modify the path in Makefile.config, to use this code, you have to compile with python layer
@@ -56,12 +57,17 @@ http://www.eecs.qmul.ac.uk/~qian/Project_cvpr16.html
 **Note:** Make sure these four folders ‘sbir_cvpr2016, ‘models’, ‘feats’ and ‘dbs’ are under the data folder.
 
 2. Run the demo:
+
 ```shell
 python $SBIR_ROOT/tools/sbir_demo.py
 ```
 
 ###Re-training the model
-1. cd $SBIR_ROOT
+1. Go to the root folder of this project
+
+	``` shell
+	cd $SBIR_ROOT
+	```
 
 2. Run the command
 ```shell
