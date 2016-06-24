@@ -1,3 +1,6 @@
+# Sketch Me That Shoe
+
+
 ###Introduction
 
 This repository contains the code for the CPVR paper ‘Sketch Me That Shoe’, which is a deep learning based implementation of fine-grained sketch-based image retrieval. 
