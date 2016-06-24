@@ -92,7 +92,7 @@ python $SBIR_ROOT/tools/sbir_demo.py
 ###Extra comment
 1. All provided models and codes are optimised version. And our latest result is shown below:
 
-   | Dataset |	acc.@1	|  acc.@10 |  % corr.  |
+   | Dataset |	acc.@1	|  acc.@10 |   %corr.  |
    |:-------:|:--------:| --------:| ---------:|
    | Shoes   | 53.91%	| 91.3%	   | 72.29%    |
    | Chairs  | 72.16%	| 98.97%   | 74.36%    |
