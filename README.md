@@ -31,7 +31,7 @@ And if you use the code for your research, please cite our paper:
 5. Extra comment
 
 ###License
-**MIT License**
+	**MIT License**
 
 ###Installation
 1. Download the repository
@@ -66,7 +66,7 @@ And if you use the code for your research, please cite our paper:
 	./download_data.sh
 	```
 
-**Note:** You can also download them manually from our project webpage: http://www.eecs.qmul.ac.uk/~qian/Project_cvpr16.html
+**Note:** You can also download them manually from our project page: http://www.eecs.qmul.ac.uk/~qian/Project_cvpr16.html
 
 
 2. Run the demo:
@@ -87,7 +87,7 @@ python $SBIR_ROOT/tools/sbir_demo.py
 ```shell
 ./experiments/train_sbir.sh
 ```
-**Note:** Please make sure the initial model ‘/init/sketchnet_init.caffemodel’ be under the folder experiments/. This initial model can be downloaded from our project webpage. 
+**Note:** Please make sure the initial model ‘/init/sketchnet_init.caffemodel’ be under the folder experiments/. This initial model can be downloaded from our project page. 
 	
 ###Extra comment
 1. All provided models and codes are optimised version. And our latest result is shown below:
