@@ -94,7 +94,7 @@ python $SBIR_ROOT/tools/sbir_demo.py
 
    | Dataset |	acc.@1	|  acc.@10 |   %corr.  |
    |:-------:|:--------:| --------:| ---------:|
-   | Shoes   | 53.91%	| 91.3%	   | 72.29%    |
+   | Shoes   | 53.91%	| 91.30%   | 72.29%    |
    | Chairs  | 72.16%	| 98.97%   | 74.36%    |
 
 2. This project used codes of the following project:
