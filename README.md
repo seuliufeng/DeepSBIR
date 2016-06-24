@@ -31,7 +31,11 @@ And if you use the code for your research, please cite our paper:
 **MIT License**
 
 ###Installation
-1. Download and unzip repository
+1. Download the repository
+
+	```shell
+	git clone git@github.com:seuliufeng/DeepSBIR.git
+	```
 
 2. Build Caffe and pycaffe
 
@@ -52,8 +56,16 @@ And if you use the code for your research, please cite our paper:
 
 ###Run the demo
 
-1. To run the demo, please first download our database and models from our project webpage:
-http://www.eecs.qmul.ac.uk/~qian/Project_cvpr16.html
+1. To run the demo, please first download our database and models. Go to the root folder of this project, and run
+
+	``` shell
+	chmod +x download_data.sh
+	./download_data.sh
+	```
+
+**Note:** You can also download them manually from our project webpage: http://www.eecs.qmul.ac.uk/~qian/Project_cvpr16.html
+
+
 **Note:** Make sure these four folders ‘sbir_cvpr2016, ‘models’, ‘feats’ and ‘dbs’ are under the data folder.
 
 2. Run the demo:
@@ -70,6 +82,7 @@ python $SBIR_ROOT/tools/sbir_demo.py
 	```
 
 2. Run the command
+
 ```shell
 ./experiments/train_sbir.sh
 ```
@@ -77,12 +90,13 @@ python $SBIR_ROOT/tools/sbir_demo.py
 	
 ###Extra comment
 1. All provided models and codes are optimised version. And our latest result is shown below:
-   Shoes dataset: 
-	acc.@1: 53.91%	acc.@10: 91.3%	%corr.: 72.29%
-   Chairs dataset: 
-	acc.@1: 72.16%	acc.@10: 98.97%	%corr.: 74.36%
+
+   | Dataset |	acc.@1	|  acc.@10 |  % corr.  |
+   | Shoes   | 53.91%	| 91.3%	   | 72.29%    |
+   | Chairs  | 72.16%	| 98.97%   | 74.36%    |
 
 2. This project used codes of the following project:
+
    Caffe trainnet python wrapper and python data layer(https://github.com/rbgirshick/fast-rcnn)
 
    L2 normalization layer(https://github.com/happynear/caffe-windows)
