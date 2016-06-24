@@ -1,4 +1,4 @@
-# Sketch Me That Shoe
+# Sketch Me *That* Shoe
 
 
 ###Introduction
