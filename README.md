@@ -20,15 +20,15 @@ And if you use the code for your research, please cite our paper:
 	
 ####Contents
 
-1. License
+1. [License](#license)
 
-2. Installation
+2. [Installation](#installation)
 
-3. Run the demo
+3. [Run the demo](#run-the-demo)
 
-4. Re-training the model
+4. [Re-training the model](#re-training-the-model)
 
-5. Extra comment
+5. [Extra comment](#extra-comment)
 
 ###License
 **MIT License**
