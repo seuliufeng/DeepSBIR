@@ -18,24 +18,32 @@ And if you use the code for your research, please cite our paper:
 ####Contents
 
 -1. License
+
 -2. Installation
+
 -3. Run the demo
+
 -4. Re-training the model
+
 -5. Extra comment
 
 ###License
-**MIT**
+**MIT License**
 
 ###Installation
 1. Download and unzip repository
+
 2. Build Caffe and pycaffe
 a. Go to root folder of this project
+
 b. modify the path in Makefile.config, to use this code, you have to compile with python layer
 ```make
   WITH_PYTHON_LAYER := 1
 ```
+
 c. Compile caffe 
 ```shell make –j32 && make pycaffe```
+
 3. Configure environment variable. Modify the path in bashsbir to your own path, and run
 ```shell
 source bashsbir
@@ -54,6 +62,7 @@ python $SBIR_ROOT/tools/sbir_demo.py
 
 ###Re-training the model
 1. cd $SBIR_ROOT
+
 2. Run the command
 ```shell
 ./experiments/train_sbir.sh
