@@ -66,8 +66,6 @@ And if you use the code for your research, please cite our paper:
 **Note:** You can also download them manually from our project webpage: http://www.eecs.qmul.ac.uk/~qian/Project_cvpr16.html
 
 
-**Note:** Make sure these four folders ‘sbir_cvpr2016, ‘models’, ‘feats’ and ‘dbs’ are under the data folder.
-
 2. Run the demo:
 
 ```shell
