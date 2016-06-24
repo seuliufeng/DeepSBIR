@@ -1,4 +1,4 @@
-Introduction
+###Introduction
 
 This repository contains the code for the CPVR paper ‘Sketch Me That Shoe’, which is a deep learning based implementation of fine-grained sketch-based image retrieval. 
 
@@ -15,76 +15,60 @@ And if you use the code for your research, please cite our paper:
 	}
 
 	
-Contents
+####Contents
 
-1. License
+-1. License
+-2. Installation
+-3. Run the demo
+-4. Re-training the model
+-5. Extra comment
 
-2. Installation
+###License
+**MIT**
 
-3. Run the demo
-
-4. Re-training the model
-
-5. Extra comment
-
-License
-
-MIT
-
-Installation
-
+###Installation
 1. Download and unzip repository
-
 2. Build Caffe and pycaffe
-		a. Go to root folder of this project
-		b. modify the path in Makefile.config
-		c. make –j32 && make pycaffe
-
+a. Go to root folder of this project
+b. modify the path in Makefile.config, to use this code, you have to compile with python layer
+```make
+  WITH_PYTHON_LAYER := 1
+```
+c. Compile caffe 
+```shell make –j32 && make pycaffe```
 3. Configure environment variable. Modify the path in bashsbir to your own path, and run
+```shell
+source bashsbir
+```
 
-		source bashsbir
-		
-Run the demo
+###Run the demo
 
 1. To run the demo, please first download our database and models from our project webpage:
-	http://www.eecs.qmul.ac.uk/~qian/Project_cvpr16.html
-
-	Note: Make sure these four folders ‘sbir_cvpr2016, ‘models’, ‘feats’ and ‘dbs’ are under the data folder.
+http://www.eecs.qmul.ac.uk/~qian/Project_cvpr16.html
+**Note:** Make sure these four folders ‘sbir_cvpr2016, ‘models’, ‘feats’ and ‘dbs’ are under the data folder.
 
 2. Run the demo:
+```shell
+python $SBIR_ROOT/tools/sbir_demo.py
+```
 
-		python $SBIR_ROOT/tools/sbir_demo.py
-		
-Re-training the model
-
+###Re-training the model
 1. cd $SBIR_ROOT
-
 2. Run the command
-
-		./experiments/train_sbir.sh	
-		
-	Note: Please make sure the initial model ‘/init/sketchnet_init.caffemodel’ be under the folder experiments/. This initial model can be downloaded from our project webpage. 
+```shell
+./experiments/train_sbir.sh
+```
+**Note:** Please make sure the initial model ‘/init/sketchnet_init.caffemodel’ be under the folder experiments/. This initial model can be downloaded from our project webpage. 
 	
-Extra comment
-
+###Extra comment
 1. All provided models and codes are optimised version. And our latest result is shown below:
-   
    Shoes dataset: 
-		
 	acc.@1: 53.91%	acc.@10: 91.3%	%corr.: 72.29%
-
    Chairs dataset: 
-		
 	acc.@1: 72.16%	acc.@10: 98.97%	%corr.: 74.36%
 
 2. This project used codes of the following project:
-
-   Caffe trainnet python wrapper and python data layer:
-   https://github.com/rbgirshick/fast-rcnn
-	
-   L2 normalization layer:
-   https://github.com/happynear/caffe-windows
-	
-   Triplet loss:
-   http://blog.csdn.net/tangwei2014/article/details/46812153
+   Caffe trainnet python wrapper and python data layer(https://github.com/rbgirshick/fast-rcnn)
+   L2 normalization layer(https://github.com/happynear/caffe-windows)
+   Triplet loss(http://blog.csdn.net/tangwei2014/article/details/46812153)
 
