@@ -31,7 +31,7 @@ And if you use the code for your research, please cite our paper:
 5. Extra comment
 
 ###License
-    **MIT License**
+**MIT License**
 
 ###Installation
 1. Download the repository
@@ -99,9 +99,9 @@ python $SBIR_ROOT/tools/sbir_demo.py
 
 2. This project used codes of the following project:
 
-   Caffe trainnet python wrapper and python data layer(https://github.com/rbgirshick/fast-rcnn)
+   [Caffe trainnet python wrapper and python data layer](https://github.com/rbgirshick/fast-rcnn)
 
-   L2 normalization layer(https://github.com/happynear/caffe-windows)
+   [L2 normalization layer](https://github.com/happynear/caffe-windows)
    
-   Triplet loss(http://blog.csdn.net/tangwei2014/article/details/46812153)
+   [Triplet loss](http://blog.csdn.net/tangwei2014/article/details/46812153)
 
