@@ -20,4 +20,3 @@ def load_model_config(dataset=''):
 
 if __name__ == "__main__":
     config = load_model_config()
-    1
