@@ -42,7 +42,7 @@ And if you use the code for your research, please cite our paper:
 
 2. Build Caffe and pycaffe
 
-	a. Go to root folder of this project
+	a. Go to folder $SBIR_ROOT/caffe_sbir
 
 	b. modify the path in Makefile.config, to use this code, you have to compile with python layer
 	```make
@@ -52,7 +52,7 @@ And if you use the code for your research, please cite our paper:
 	c. Compile caffe 
 	```shell make –j32 && make pycaffe```
 
-3. Configure environment variable. Modify the path in bashsbir to your own path, and run
+3. Go to fold $SBIR_ROOT, and run
 	```shell
 	source bashsbir
 	```
