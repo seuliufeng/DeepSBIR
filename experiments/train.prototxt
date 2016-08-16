@@ -9,7 +9,7 @@ layer {
   python_param {
     module: "sbir_sampling.triplet_sampler"
     layer: "TripletSamplingLayer"
-    param_str: "{'sketch_dir': '/data/dbs/shoes/shoes_sketch_db_train.mat', 'image_dir': '/data/dbs/shoes/shoes_edge_db_train.mat', 'triplet_path': '/data/dbs/shoes/shoes_annotation.json', 'mean': 250.42, 'batch_size': 128, 'hard_ratio': 0.75, 'phase': 'TRAIN'}"
+    param_str: "{'sketch_dir': './data/dbs/shoes/shoes_sketch_db_train.mat', 'image_dir': './data/dbs/shoes/shoes_edge_db_train.mat', 'triplet_path': './data/dbs/shoes/shoes_annotation.json', 'mean': 250.42, 'batch_size': 128, 'hard_ratio': 0.75, 'phase': 'TRAIN'}"
   }
 }
 
