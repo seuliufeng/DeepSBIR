@@ -66,9 +66,9 @@ def sbir_demo():
             print '%s' % results[i]
         vis_retrieval(im, results[:topK], true_match)
     # test shoes
-    test('test_shoes_370.jpg', '370.jpg', 'data/models/shoes.caffemodel', 'shoes')
+    test('test_shoes_370.png', '370.png', 'data/models/shoes.caffemodel', 'shoes')
     # test chairs
-    test('test_chairs_294.jpg', '294.jpg' ,'data/models/chairs.caffemodel', 'chairs')
+    test('test_chairs_230.png', '230.png' ,'data/models/chairs.caffemodel', 'chairs')
 
 
 if __name__ == "__main__":
