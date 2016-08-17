@@ -95,7 +95,7 @@ python $SBIR_ROOT/tools/sbir_demo.py
    | Shoes   | 53.91%	| 91.30%   | 72.29%    |
    | Chairs  | 72.16%	| 98.97%   | 74.36%    |
    
-   Further explanation: The model we reported in our paper is trained by our originally collected sketches which contain much noise. In order to improve usability, we cleaned the sketch images(removed some noise) after CVPR2016 deadline. You can compare images 'test_shoes_370.png' and '370.jpg' (or 'test_chairs_230.png'/'230.jpg') to see the difference. We re-trained our model using clean sketch images and the new results are listed above. Both the model and dataset we released now is the latest version. Sorry for any confusion we may bring about. If you have further questions, please email q.yu@qmul.ac.uk.
+**Further explanation:** The model we reported in our paper is trained by our originally collected sketches which contain much noise. In order to improve usability, we cleaned the sketch images(removed some noise) after CVPR2016 deadline. You can compare images 'test_shoes_370.png' and '370.jpg' (or 'test_chairs_230.png'/'230.jpg') to see the difference. We re-trained our model using clean sketch images and the new results are listed above. Both the model and dataset we released now is the latest version. Sorry for any confusion we may bring about. If you have further questions, please email q.yu@qmul.ac.uk.
 
 2. This project used codes of the following project:
 
