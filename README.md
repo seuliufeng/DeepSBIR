@@ -8,6 +8,8 @@ This repository contains the code for the CVPR paper ‘Sketch Me That Shoe’, 
 For more details, please visit our project page:
 http://www.eecs.qmul.ac.uk/~qian/Project_cvpr16.html
 
+New: Tensorflow implementation can be found here: https://github.com/yuchuochuo1023/Deep_SBIR_tf/tree/master.
+
 And if you use the code for your research, please cite our paper:
 
 	@inproceedings{qian2016,
